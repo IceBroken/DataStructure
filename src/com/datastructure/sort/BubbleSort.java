@@ -11,7 +11,10 @@ public class BubbleSort {
             System.out.print(array[i] + "\t");
         }
         System.out.println();
+        Long startTime = System.currentTimeMillis();
         bubbleSort(array);
+        Long endTime = System.currentTimeMillis();
+        System.out.println((endTime - startTime) / 1000);
         for (int i : array) {
             System.out.print(i + "\t");
         }
