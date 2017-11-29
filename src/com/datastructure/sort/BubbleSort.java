@@ -1,25 +1,6 @@
 package com.datastructure.sort;
 
-import java.util.Random;
-
 public class BubbleSort {
-    public static void main(String[] args) {
-        Random rd = new Random(20);
-        int[] array = new int[10];
-        for (int i = 0; i < array.length; i++) {
-            array[i] = i * rd.nextInt(20);
-            System.out.print(array[i] + "\t");
-        }
-        System.out.println();
-        Long startTime = System.currentTimeMillis();
-        bubbleSort(array);
-        Long endTime = System.currentTimeMillis();
-        System.out.println((endTime - startTime) / 1000);
-        for (int i : array) {
-            System.out.print(i + "\t");
-        }
-    }
-
     /**
      * 冒泡排序 ASC
      */
