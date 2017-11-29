@@ -7,8 +7,8 @@ public class RunMain {
             array[i] = i;
         }
         Long startTime = System.currentTimeMillis();
-//        int index = BinarySearch.binarySearch(array, 0, array.length - 1, 11);
-        int index = BinarySearch.binarySearch(array, 6);
+//        int index = BinarySearch.binarySearch(array, 0, array.length - 1, 11);//递归查找
+        int index = BinarySearch.binarySearch(array, 6);//非递归查找
         Long endTime = System.currentTimeMillis();
         System.out.println((startTime - endTime) / 1000);
         if (index == -1) {
